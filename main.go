@@ -5,9 +5,12 @@ import (
 	"time"
 
 	"github.com/bwmarrin/discordgo"
+	"github.com/gopherbot/types"
 )
 
 func main() {
+	msgCmd := make(map[types.ActionType][]types.Plugin)
+
 	dg, err := discordgo.New("uname", "password")
 	if err != nil {
 		fmt.Println(err)

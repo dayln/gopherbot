@@ -5,7 +5,7 @@ type Plugin interface {
 	Name() string
 	Trigger() string
 	Action() ActionType
-	CmdExec(cmd string)
+	CmdExec(data string, res Response)
 }
 
 //ActionType is an enum of plugin action types

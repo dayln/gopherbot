@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/bwmarrin/discordgo"
-	"github.com/gopherbot/types"
+	"github.com/dayln/gopherbot/types"
 )
 
 //Bot type that handles all the discodgo methods
@@ -31,6 +31,6 @@ func (b *Bot) Login() error {
 func (b *Bot) SendMsg(msg types.Response) (err error) {
 	rt, err := b.dg.ChannelMessageSend(msg.OriginalPost.ChannelID, msg.Content)
 
-	return
+	return err
 
 }

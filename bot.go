@@ -29,7 +29,7 @@ func (b *Bot) Login() error {
 
 //SendMsg Sends a message on a specified channel.
 func (b *Bot) SendMsg(msg types.Response) (err error) {
-	rt, err := b.dg.ChannelMessageSend(msg.OriginalPost.ChannelID, msg.Content)
+	//	rt, err := b.dg.ChannelMessageSend(msg.OriginalPost.ChannelID, msg.Content)
 
 	return err
 
